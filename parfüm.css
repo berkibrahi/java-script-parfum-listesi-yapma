@@ -1,0 +1,54 @@
+form{
+ font-size:20px;
+    border: 5px solid red;
+	    width: 80%;
+		   margin: auto;
+		    display: grid;
+			 grid-template-columns: auto auto;
+			 border-radius:20px;
+}
+span{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+   
+}
+input[type=button]{
+    grid-column: 1/3;
+	background-color:purple;
+	color:yellow;
+}
+input[type=text]{
+    max-width: 100px;
+    margin: 0.25rem;
+	border:3px solid green;
+	border-radius:20px;
+}
+select{
+ background-color:yellow;
+ color:red;
+
+   margin: 0.25rem;
+    border:5px solid black;
+	border-radius:20px;
+    
+}
+h3,h5{
+    text-align: center;
+}
+form>span{
+    border-top: thin solid black;
+    border-bottom: thin solid black;
+    padding: 1rem;
+}
+form label{
+   
+    border-bottom: thin solid black;
+	margin-left:20px;
+	margin-top:10px;
+margin-bottom:10px;
+}
+
+span label {
+color:blue;}
+input[type=radio]{
+color:1px solid red;}

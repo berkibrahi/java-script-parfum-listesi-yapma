@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>parfüm şiparişi</title>
+ <link rel="stylesheet" type="text/css" href="parfüm.css">
+</head>
+ <body onload="ürünadedi();ürüntaksidi()">
+ <script src="css/parfüm.js"></script>
+ <h3>parfüm şiparişinizi seçiniz</h3>
+ <form action="#"id="formürün">
+ <label for="ürüntipi"> ürün tipini seçiniz</label>
+ <span>
+ <input type="radio" name="ürüntipi" id="erkekürünleri" value="E" onchange="urunlerigetir()">
+  <label for="erkekürünleri">erkek ürünleri</label>
+   <input type="radio" name="ürüntipi" id="kadınürünleri" value="K" onchange="urunlerigetir()">
+     <label for="kadınürünleri">kadınürünleri</label>
+ </span>
+  <input type="button"  id="btngetir" value="ürün listesini getir">
+  <label for="ürünlistesi"> ürünü seçiniz</label>
+  <select id="seç" >
+  </select>
+  <label for="ürünadedi"> ürün adetini seçiniz</label>
+   <select id="adet" >
+  </select>
+   <label for="ürünataksit"> ürün taksitini seçiniz</label>
+   <select id="taksit" >
+  </select>
+  <input type="button" value=" Hesapla" id="btnAraToplam" onclick="hesapla();">
+   <label for="txtAraToplam">Ara Toplam Tutarı</label>
+        <input type="text" name="" id="txtaraplam" disabled>
+      <label for="txtbirim">birim fiyati</label>
+        <input type="text" name="" id="birim" disabled>
+
+        <label for="txtKargo">Kargo ücreti</label>
+        <input type="text" name="" id="txtKargo" disabled>
+ </form>
+ <h5 id="sonuc"></h5>
+
+ 	 </body>
+	 
+	 
+</html>
